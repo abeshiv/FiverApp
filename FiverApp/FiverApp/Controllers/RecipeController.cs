@@ -40,7 +40,12 @@ namespace FiverApp.Controllers
         // GET: /Recipe/Create
         public ActionResult Create()
         {
+
             ViewBag.Ingredient1 = new SelectList(db.Ingredients, "IngredientId", "IngredientName");
+            ViewBag.Ingredient = new SelectList(db.Ingredients, "IngredientId", "IngredientName");
+            ViewBag.Ingredient11 = new SelectList(db.Ingredients, "IngredientId", "IngredientName");
+            ViewBag.Ingredient12 = new SelectList(db.Ingredients, "IngredientId", "IngredientName");
+            ViewBag.Ingredient13 = new SelectList(db.Ingredients, "IngredientId", "IngredientName");
             ViewBag.Ingredient10 = new SelectList(db.Ingredients, "IngredientId", "IngredientName");
             ViewBag.Ingredient2 = new SelectList(db.Ingredients, "IngredientId", "IngredientName");
             ViewBag.Ingredient3 = new SelectList(db.Ingredients, "IngredientId", "IngredientName");

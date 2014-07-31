@@ -58,6 +58,8 @@
             @Html.DisplayFor(model => model.CookTime)
         </dd>
 
+        @if (Model.Ingredient != null)
+        {
         <dt>
             @Html.DisplayNameFor(model => model.Ingredient.IngredientName)
         </dt>
@@ -65,6 +67,7 @@
         <dd>
             @Html.DisplayFor(model => model.Ingredient.IngredientName)
         </dd>
+        }
 
        @*<dt>
         @Html.DisplayNameFor(model => model.Ingredient11.IngredientName)
@@ -73,7 +76,7 @@
     <dd>
         @Html.DisplayFor(model => model.Ingredient11.IngredientName)
     </dd>*@ 
-        
+            
         <dt>
             @Html.DisplayNameFor(model => model.Ingredient12.IngredientName)
         </dt>
@@ -81,6 +84,7 @@
         <dd>
             @Html.DisplayFor(model => model.Ingredient12.IngredientName)
         </dd>
+
     
         <dt>
             @Html.DisplayNameFor(model => model.Ingredient13.IngredientName)
