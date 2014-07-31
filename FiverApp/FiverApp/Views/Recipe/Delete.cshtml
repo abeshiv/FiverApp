@@ -1,0 +1,152 @@
+﻿@model FiverApp.Recipe
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Recipe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipeType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecipeType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Servings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Servings)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Directions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Directions)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrepTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrepTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CookTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CookTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredient.IngredientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredient.IngredientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredient11.IngredientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredient11.IngredientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredient12.IngredientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredient12.IngredientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredient13.IngredientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredient13.IngredientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredient14.IngredientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredient14.IngredientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredient15.IngredientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredient15.IngredientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredient16.IngredientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredient16.IngredientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredient17.IngredientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredient17.IngredientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredient18.IngredientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredient18.IngredientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredient19.IngredientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredient19.IngredientName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

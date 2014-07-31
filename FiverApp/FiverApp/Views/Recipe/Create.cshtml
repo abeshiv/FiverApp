@@ -1,0 +1,161 @@
+﻿@model FiverApp.Recipe
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Recipe</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RecipeType, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.RecipeType)
+                @Html.ValidationMessageFor(model => model.RecipeType)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Servings, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Servings)
+                @Html.ValidationMessageFor(model => model.Servings)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Directions, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Directions)
+                @Html.ValidationMessageFor(model => model.Directions)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrepTime, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PrepTime)
+                @Html.ValidationMessageFor(model => model.PrepTime)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CookTime, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CookTime)
+                @Html.ValidationMessageFor(model => model.CookTime)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ingredient1, "Ingredient1", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ingredient1", String.Empty)
+                @Html.ValidationMessageFor(model => model.Ingredient1)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ingredient2, "Ingredient2", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ingredient2", String.Empty)
+                @Html.ValidationMessageFor(model => model.Ingredient2)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ingredient3, "Ingredient3", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ingredient3", String.Empty)
+                @Html.ValidationMessageFor(model => model.Ingredient3)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ingredient4, "Ingredient4", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ingredient4", String.Empty)
+                @Html.ValidationMessageFor(model => model.Ingredient4)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ingredient5, "Ingredient5", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ingredient5", String.Empty)
+                @Html.ValidationMessageFor(model => model.Ingredient5)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ingredient6, "Ingredient6", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ingredient6", String.Empty)
+                @Html.ValidationMessageFor(model => model.Ingredient6)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ingredient7, "Ingredient7", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ingredient7", String.Empty)
+                @Html.ValidationMessageFor(model => model.Ingredient7)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ingredient8, "Ingredient8", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ingredient8", String.Empty)
+                @Html.ValidationMessageFor(model => model.Ingredient8)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ingredient9, "Ingredient9", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ingredient9", String.Empty)
+                @Html.ValidationMessageFor(model => model.Ingredient9)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ingredient10, "Ingredient10", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ingredient10", String.Empty)
+                @Html.ValidationMessageFor(model => model.Ingredient10)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FiverDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Ingredient">
+          <Key>
+            <PropertyRef Name="IngredientId" />
+          </Key>
+          <Property Name="IngredientId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IngredientName" Type="varchar" MaxLength="50" />
+          <Property Name="IngredientType" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Recipe">
+          <Key>
+            <PropertyRef Name="RecipeId" />
+          </Key>
+          <Property Name="RecipeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="RecipeType" Type="varchar" MaxLength="50" />
+          <Property Name="Servings" Type="int" />
+          <Property Name="Directions" Type="varchar" MaxLength="5000" />
+          <Property Name="PrepTime" Type="time" Precision="7" />
+          <Property Name="CookTime" Type="time" Precision="7" />
+          <Property Name="Ingredient1" Type="int" />
+          <Property Name="Ingredient2" Type="int" />
+          <Property Name="Ingredient3" Type="int" />
+          <Property Name="Ingredient4" Type="int" />
+          <Property Name="Ingredient5" Type="int" />
+          <Property Name="Ingredient6" Type="int" />
+          <Property Name="Ingredient7" Type="int" />
+          <Property Name="Ingredient8" Type="int" />
+          <Property Name="Ingredient9" Type="int" />
+          <Property Name="Ingredient10" Type="int" />
+        </EntityType>
+        <Association Name="FK_Recipe_Ingredient1">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient10">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient10" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient2">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient3">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient3" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient4">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient4" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient5">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient5" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient6">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient6" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient7">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient7" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient8">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient8" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient9">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient9" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FiverDBModelStoreContainer">
+          <EntitySet Name="Ingredient" EntityType="Self.Ingredient" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Recipe" EntityType="Self.Recipe" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Recipe_Ingredient1" Association="Self.FK_Recipe_Ingredient1">
+            <End Role="Ingredient" EntitySet="Ingredient" />
+            <End Role="Recipe" EntitySet="Recipe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient10" Association="Self.FK_Recipe_Ingredient10">
+            <End Role="Ingredient" EntitySet="Ingredient" />
+            <End Role="Recipe" EntitySet="Recipe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient2" Association="Self.FK_Recipe_Ingredient2">
+            <End Role="Ingredient" EntitySet="Ingredient" />
+            <End Role="Recipe" EntitySet="Recipe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient3" Association="Self.FK_Recipe_Ingredient3">
+            <End Role="Ingredient" EntitySet="Ingredient" />
+            <End Role="Recipe" EntitySet="Recipe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient4" Association="Self.FK_Recipe_Ingredient4">
+            <End Role="Ingredient" EntitySet="Ingredient" />
+            <End Role="Recipe" EntitySet="Recipe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient5" Association="Self.FK_Recipe_Ingredient5">
+            <End Role="Ingredient" EntitySet="Ingredient" />
+            <End Role="Recipe" EntitySet="Recipe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient6" Association="Self.FK_Recipe_Ingredient6">
+            <End Role="Ingredient" EntitySet="Ingredient" />
+            <End Role="Recipe" EntitySet="Recipe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient7" Association="Self.FK_Recipe_Ingredient7">
+            <End Role="Ingredient" EntitySet="Ingredient" />
+            <End Role="Recipe" EntitySet="Recipe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient8" Association="Self.FK_Recipe_Ingredient8">
+            <End Role="Ingredient" EntitySet="Ingredient" />
+            <End Role="Recipe" EntitySet="Recipe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient9" Association="Self.FK_Recipe_Ingredient9">
+            <End Role="Ingredient" EntitySet="Ingredient" />
+            <End Role="Recipe" EntitySet="Recipe" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FiverDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Ingredient">
+          <Key>
+            <PropertyRef Name="IngredientId" />
+          </Key>
+          <Property Name="IngredientId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IngredientName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IngredientType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Recipes" Relationship="Self.FK_Recipe_Ingredient1" FromRole="Ingredient" ToRole="Recipe" />
+          <NavigationProperty Name="Recipes1" Relationship="Self.FK_Recipe_Ingredient10" FromRole="Ingredient" ToRole="Recipe" />
+          <NavigationProperty Name="Recipes2" Relationship="Self.FK_Recipe_Ingredient2" FromRole="Ingredient" ToRole="Recipe" />
+          <NavigationProperty Name="Recipes3" Relationship="Self.FK_Recipe_Ingredient3" FromRole="Ingredient" ToRole="Recipe" />
+          <NavigationProperty Name="Recipes4" Relationship="Self.FK_Recipe_Ingredient4" FromRole="Ingredient" ToRole="Recipe" />
+          <NavigationProperty Name="Recipes5" Relationship="Self.FK_Recipe_Ingredient5" FromRole="Ingredient" ToRole="Recipe" />
+          <NavigationProperty Name="Recipes6" Relationship="Self.FK_Recipe_Ingredient6" FromRole="Ingredient" ToRole="Recipe" />
+          <NavigationProperty Name="Recipes7" Relationship="Self.FK_Recipe_Ingredient7" FromRole="Ingredient" ToRole="Recipe" />
+          <NavigationProperty Name="Recipes8" Relationship="Self.FK_Recipe_Ingredient8" FromRole="Ingredient" ToRole="Recipe" />
+          <NavigationProperty Name="Recipes9" Relationship="Self.FK_Recipe_Ingredient9" FromRole="Ingredient" ToRole="Recipe" />
+        </EntityType>
+        <EntityType Name="Recipe">
+          <Key>
+            <PropertyRef Name="RecipeId" />
+          </Key>
+          <Property Name="RecipeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RecipeType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Servings" Type="Int32" />
+          <Property Name="Directions" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="PrepTime" Type="Time" Precision="7" />
+          <Property Name="CookTime" Type="Time" Precision="7" />
+          <Property Name="Ingredient1" Type="Int32" />
+          <Property Name="Ingredient2" Type="Int32" />
+          <Property Name="Ingredient3" Type="Int32" />
+          <Property Name="Ingredient4" Type="Int32" />
+          <Property Name="Ingredient5" Type="Int32" />
+          <Property Name="Ingredient6" Type="Int32" />
+          <Property Name="Ingredient7" Type="Int32" />
+          <Property Name="Ingredient8" Type="Int32" />
+          <Property Name="Ingredient9" Type="Int32" />
+          <Property Name="Ingredient10" Type="Int32" />
+          <NavigationProperty Name="Ingredient" Relationship="Self.FK_Recipe_Ingredient1" FromRole="Recipe" ToRole="Ingredient" />
+          <NavigationProperty Name="Ingredient11" Relationship="Self.FK_Recipe_Ingredient10" FromRole="Recipe" ToRole="Ingredient" />
+          <NavigationProperty Name="Ingredient12" Relationship="Self.FK_Recipe_Ingredient2" FromRole="Recipe" ToRole="Ingredient" />
+          <NavigationProperty Name="Ingredient13" Relationship="Self.FK_Recipe_Ingredient3" FromRole="Recipe" ToRole="Ingredient" />
+          <NavigationProperty Name="Ingredient14" Relationship="Self.FK_Recipe_Ingredient4" FromRole="Recipe" ToRole="Ingredient" />
+          <NavigationProperty Name="Ingredient15" Relationship="Self.FK_Recipe_Ingredient5" FromRole="Recipe" ToRole="Ingredient" />
+          <NavigationProperty Name="Ingredient16" Relationship="Self.FK_Recipe_Ingredient6" FromRole="Recipe" ToRole="Ingredient" />
+          <NavigationProperty Name="Ingredient17" Relationship="Self.FK_Recipe_Ingredient7" FromRole="Recipe" ToRole="Ingredient" />
+          <NavigationProperty Name="Ingredient18" Relationship="Self.FK_Recipe_Ingredient8" FromRole="Recipe" ToRole="Ingredient" />
+          <NavigationProperty Name="Ingredient19" Relationship="Self.FK_Recipe_Ingredient9" FromRole="Recipe" ToRole="Ingredient" />
+        </EntityType>
+        <Association Name="FK_Recipe_Ingredient1">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient10">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient10" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient2">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient3">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient3" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient4">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient4" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient5">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient5" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient6">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient6" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient7">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient7" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient8">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient8" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recipe_Ingredient9">
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="0..1" />
+          <End Role="Recipe" Type="Self.Recipe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ingredient">
+              <PropertyRef Name="IngredientId" />
+            </Principal>
+            <Dependent Role="Recipe">
+              <PropertyRef Name="Ingredient9" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FiverDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Ingredients" EntityType="Self.Ingredient" />
+          <EntitySet Name="Recipes" EntityType="Self.Recipe" />
+          <AssociationSet Name="FK_Recipe_Ingredient1" Association="Self.FK_Recipe_Ingredient1">
+            <End Role="Ingredient" EntitySet="Ingredients" />
+            <End Role="Recipe" EntitySet="Recipes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient10" Association="Self.FK_Recipe_Ingredient10">
+            <End Role="Ingredient" EntitySet="Ingredients" />
+            <End Role="Recipe" EntitySet="Recipes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient2" Association="Self.FK_Recipe_Ingredient2">
+            <End Role="Ingredient" EntitySet="Ingredients" />
+            <End Role="Recipe" EntitySet="Recipes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient3" Association="Self.FK_Recipe_Ingredient3">
+            <End Role="Ingredient" EntitySet="Ingredients" />
+            <End Role="Recipe" EntitySet="Recipes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient4" Association="Self.FK_Recipe_Ingredient4">
+            <End Role="Ingredient" EntitySet="Ingredients" />
+            <End Role="Recipe" EntitySet="Recipes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient5" Association="Self.FK_Recipe_Ingredient5">
+            <End Role="Ingredient" EntitySet="Ingredients" />
+            <End Role="Recipe" EntitySet="Recipes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient6" Association="Self.FK_Recipe_Ingredient6">
+            <End Role="Ingredient" EntitySet="Ingredients" />
+            <End Role="Recipe" EntitySet="Recipes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient7" Association="Self.FK_Recipe_Ingredient7">
+            <End Role="Ingredient" EntitySet="Ingredients" />
+            <End Role="Recipe" EntitySet="Recipes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient8" Association="Self.FK_Recipe_Ingredient8">
+            <End Role="Ingredient" EntitySet="Ingredients" />
+            <End Role="Recipe" EntitySet="Recipes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recipe_Ingredient9" Association="Self.FK_Recipe_Ingredient9">
+            <End Role="Ingredient" EntitySet="Ingredients" />
+            <End Role="Recipe" EntitySet="Recipes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FiverDBModelStoreContainer" CdmEntityContainer="FiverDBEntities">
+          <EntitySetMapping Name="Ingredients">
+            <EntityTypeMapping TypeName="FiverDBModel.Ingredient">
+              <MappingFragment StoreEntitySet="Ingredient">
+                <ScalarProperty Name="IngredientId" ColumnName="IngredientId" />
+                <ScalarProperty Name="IngredientName" ColumnName="IngredientName" />
+                <ScalarProperty Name="IngredientType" ColumnName="IngredientType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Recipes">
+            <EntityTypeMapping TypeName="FiverDBModel.Recipe">
+              <MappingFragment StoreEntitySet="Recipe">
+                <ScalarProperty Name="RecipeId" ColumnName="RecipeId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="RecipeType" ColumnName="RecipeType" />
+                <ScalarProperty Name="Servings" ColumnName="Servings" />
+                <ScalarProperty Name="Directions" ColumnName="Directions" />
+                <ScalarProperty Name="PrepTime" ColumnName="PrepTime" />
+                <ScalarProperty Name="CookTime" ColumnName="CookTime" />
+                <ScalarProperty Name="Ingredient1" ColumnName="Ingredient1" />
+                <ScalarProperty Name="Ingredient2" ColumnName="Ingredient2" />
+                <ScalarProperty Name="Ingredient3" ColumnName="Ingredient3" />
+                <ScalarProperty Name="Ingredient4" ColumnName="Ingredient4" />
+                <ScalarProperty Name="Ingredient5" ColumnName="Ingredient5" />
+                <ScalarProperty Name="Ingredient6" ColumnName="Ingredient6" />
+                <ScalarProperty Name="Ingredient7" ColumnName="Ingredient7" />
+                <ScalarProperty Name="Ingredient8" ColumnName="Ingredient8" />
+                <ScalarProperty Name="Ingredient9" ColumnName="Ingredient9" />
+                <ScalarProperty Name="Ingredient10" ColumnName="Ingredient10" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

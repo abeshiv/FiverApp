@@ -1,0 +1,123 @@
+﻿@model IEnumerable<FiverApp.Recipe>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecipeType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Servings)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Directions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrepTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CookTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient.IngredientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient11.IngredientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient12.IngredientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient13.IngredientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient14.IngredientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient15.IngredientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient16.IngredientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient17.IngredientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient18.IngredientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient19.IngredientName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecipeType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Servings)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Directions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrepTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CookTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient.IngredientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient11.IngredientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient12.IngredientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient13.IngredientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient14.IngredientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient15.IngredientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient16.IngredientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient17.IngredientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient18.IngredientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient19.IngredientName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.RecipeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.RecipeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.RecipeId })
+        </td>
+    </tr>
+}
+
+</table>

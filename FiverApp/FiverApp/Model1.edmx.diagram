@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cbbc497ef2774bd1b9d3ab5b465a804c" Name="Diagram1">
+        <EntityTypeShape EntityType="FiverDBModel.Ingredient" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FiverDBModel.Recipe" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="FiverDBModel.FK_Recipe_Ingredient1" ManuallyRouted="false" />
+        <AssociationConnector Association="FiverDBModel.FK_Recipe_Ingredient10" ManuallyRouted="false" />
+        <AssociationConnector Association="FiverDBModel.FK_Recipe_Ingredient2" ManuallyRouted="false" />
+        <AssociationConnector Association="FiverDBModel.FK_Recipe_Ingredient3" ManuallyRouted="false" />
+        <AssociationConnector Association="FiverDBModel.FK_Recipe_Ingredient4" ManuallyRouted="false" />
+        <AssociationConnector Association="FiverDBModel.FK_Recipe_Ingredient5" ManuallyRouted="false" />
+        <AssociationConnector Association="FiverDBModel.FK_Recipe_Ingredient6" ManuallyRouted="false" />
+        <AssociationConnector Association="FiverDBModel.FK_Recipe_Ingredient7" ManuallyRouted="false" />
+        <AssociationConnector Association="FiverDBModel.FK_Recipe_Ingredient8" ManuallyRouted="false" />
+        <AssociationConnector Association="FiverDBModel.FK_Recipe_Ingredient9" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
