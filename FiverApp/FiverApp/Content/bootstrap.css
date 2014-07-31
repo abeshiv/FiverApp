@@ -181,9 +181,12 @@ optgroup {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  padding: 0;
 }
 td,
 th {
+  border-collapse: collapse;
+  border-spacing: 0;
   padding: 0;
 }
 @media print {
@@ -238,9 +241,17 @@ th {
   .navbar {
     display: none;
   }
-  .table td,
+  .table td{
+      border-right: 1px solid red;
+      border-bottom: 1px solid red;
+      margin: 0;
+      padding: 1px;
+  }
   .table th {
     background-color: #fff !important;
+      margin: 0;
+      padding: 1px;
+  }
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -254,6 +265,10 @@ th {
   }
   .table-bordered th,
   .table-bordered td {
+       border-right: 1px solid red;
+      border-bottom: 1px solid red;
+      margin: 0;
+      padding: 1px;
     border: 1px solid #ddd !important;
   }
 }
@@ -2050,7 +2065,7 @@ pre code {
   }
 }
 table {
-  background-color: transparent;
+  background-color: skyblue;
 }
 th {
   text-align: left;
@@ -2066,7 +2081,7 @@ th {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 8px;
+  padding: 0px;
   line-height: 1.42857143;
   vertical-align: top;
   border-top: 1px solid #0d747c;
@@ -2095,7 +2110,7 @@ th {
 .table-condensed > thead > tr > td,
 .table-condensed > tbody > tr > td,
 .table-condensed > tfoot > tr > td {
-  padding: 5px;
+  padding: 1px;
 }
 .table-bordered {
   border: 1px solid #0d747c;
