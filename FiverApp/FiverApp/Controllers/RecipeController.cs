@@ -29,6 +29,7 @@ namespace FiverApp.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Recipe recipe = db.Recipes.Find(id);
+          
             if (recipe == null)
             {
                 return HttpNotFound();
