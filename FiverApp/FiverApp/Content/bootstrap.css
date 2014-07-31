@@ -2401,6 +2401,11 @@ fieldset[disabled] .form-control {
 textarea.form-control {
   height: auto;
 }
+
+.desc{
+    height: 200px;
+    width: 300px;
+}
 input[type="search"] {
   -webkit-appearance: none;
 }
@@ -2427,11 +2432,16 @@ input[type="month"].input-lg {
   margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 #ing{
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
+=======
+#form-test{
+    /*margin-bottom: 15px;*/
+>>>>>>> origin/master
     color: black;
 }
 .radio,
