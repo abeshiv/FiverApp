@@ -231,8 +231,8 @@
           <Property Name="RecipeType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Servings" Type="Int32" />
           <Property Name="Directions" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
-          <Property Name="PrepTime" Type="Time" Precision="7" />
-          <Property Name="CookTime" Type="Time" Precision="7" />
+          <Property Name="PrepTime" Type="Time" />
+          <Property Name="CookTime" Type="Time" />
           <Property Name="Ingredient1" Type="Int32" />
           <Property Name="Ingredient2" Type="Int32" />
           <Property Name="Ingredient3" Type="Int32" />
