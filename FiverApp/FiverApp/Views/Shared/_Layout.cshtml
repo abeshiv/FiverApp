@@ -33,11 +33,17 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - QuickRecipes&trade;</p>
+
+        <div>
             <p>QuickRecipes&trade; is coming soon to the iPhone, iPad or a smart toaster near you!</p>
-        </footer>
-    </div>
+        </div>
+            
+
+            <footer>
+                <p>&copy; @DateTime.Now.Year - QuickRecipes&trade;</p>
+
+            </footer>
+        </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
