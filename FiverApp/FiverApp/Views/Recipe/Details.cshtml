@@ -76,7 +76,8 @@
     <dd>
         @Html.DisplayFor(model => model.Ingredient11.IngredientName)
     </dd>*@ 
-            
+     @if (Model.Ingredient12 != null)
+     {
         <dt>
             @Html.DisplayNameFor(model => model.Ingredient12.IngredientName)
         </dt>
@@ -84,8 +85,9 @@
         <dd>
             @Html.DisplayFor(model => model.Ingredient12.IngredientName)
         </dd>
-
-    
+     }
+    @if (Model.Ingredient13 != null)
+        {
         <dt>
             @Html.DisplayNameFor(model => model.Ingredient13.IngredientName)
         </dt>
@@ -93,7 +95,10 @@
         <dd>
             @Html.DisplayFor(model => model.Ingredient13.IngredientName)
         </dd>
-
+         }
+         
+        @if (Model.Ingredient != null)
+        {
         <dt>
             @Html.DisplayNameFor(model => model.Ingredient14.IngredientName)
         </dt>
@@ -101,7 +106,10 @@
         <dd>
             @Html.DisplayFor(model => model.Ingredient14.IngredientName)
         </dd>
-
+        }
+        
+        @if (Model.Ingredient15 != null)
+        {
         <dt>
             @Html.DisplayNameFor(model => model.Ingredient15.IngredientName)
         </dt>
@@ -109,7 +117,10 @@
         <dd>
             @Html.DisplayFor(model => model.Ingredient15.IngredientName)
         </dd>
-
+        }
+        
+@if (Model.Ingredient16 != null)
+        {
         <dt>
             @Html.DisplayNameFor(model => model.Ingredient16.IngredientName)
         </dt>
@@ -117,7 +128,9 @@
         <dd>
             @Html.DisplayFor(model => model.Ingredient16.IngredientName)
         </dd>
-
+        }
+        @if (Model.Ingredient17 != null)
+        {
         <dt>
             @Html.DisplayNameFor(model => model.Ingredient17.IngredientName)
         </dt>
@@ -125,7 +138,9 @@
         <dd>
             @Html.DisplayFor(model => model.Ingredient17.IngredientName)
         </dd>
-
+        }
+        @if (Model.Ingredient18 != null)
+        {
         <dt>
             @Html.DisplayNameFor(model => model.Ingredient18.IngredientName)
         </dt>
@@ -133,7 +148,10 @@
         <dd>
             @Html.DisplayFor(model => model.Ingredient18.IngredientName)
         </dd>
-
+        }
+        
+        @if (Model.Ingredient19 != null)
+        {
         <dt>
             @Html.DisplayNameFor(model => model.Ingredient19.IngredientName)
         </dt>
@@ -141,6 +159,7 @@
         <dd>
             @Html.DisplayFor(model => model.Ingredient19.IngredientName)
         </dd>
+        }
 
     </dl>
 </div>
