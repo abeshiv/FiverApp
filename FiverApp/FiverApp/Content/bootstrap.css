@@ -2418,6 +2418,7 @@ input[type="month"].input-lg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ing{
     position: relative;
     min-height: 1px;
@@ -2428,6 +2429,11 @@ input[type="month"].input-lg {
     /*margin-bottom: 15px;*/
 >>>>>>> origin/master
     color: black;
+=======
+.form-test{
+    margin-bottom: 30px;
+    color: red;
+>>>>>>> parent of bde8507... Ingredients CSS
 }
 .radio,
 .checkbox {
