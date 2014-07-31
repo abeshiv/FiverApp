@@ -128,7 +128,7 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-test">
             @Html.LabelFor(model => model.Ingredient9, "Ingredient9", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("Ingredient9", String.Empty)
@@ -147,7 +147,8 @@
         <form method="post">
             <div id="itemRows">
 
-                Item quantity: <input type="text" name="add_qty" size="4" /> Item name: <input type="text" name="add_name" /> <input onclick="addRow(this.form);" type="button" value="Add row" />
+                Item quantity: <input type="text" name="add_qty" size="4" /> Item name: <input type="text" name="add_name" /> 
+                <input onclick="addRow(this.form);" type="button" value="Add row" />
 
             </div>
         </form>
