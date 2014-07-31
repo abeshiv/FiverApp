@@ -29,7 +29,7 @@
         <th>
             @Html.DisplayNameFor(model => model.CookTime)
         </th>
-        <th>
+       @* <th>
             @Html.DisplayNameFor(model => model.Ingredient.IngredientName)
         </th>
         <th>
@@ -58,7 +58,7 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Ingredient19.IngredientName)
-        </th>
+        </th>*@
         <th></th>
     </tr>
 
@@ -82,36 +82,36 @@
         <td>
             @Html.DisplayFor(modelItem => item.CookTime)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ingredient.IngredientName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ingredient11.IngredientName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ingredient12.IngredientName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ingredient13.IngredientName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ingredient14.IngredientName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ingredient15.IngredientName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ingredient16.IngredientName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ingredient17.IngredientName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ingredient18.IngredientName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ingredient19.IngredientName)
-        </td>
+       @* <td>
+        @Html.DisplayFor(modelItem => item.Ingredient.IngredientName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ingredient11.IngredientName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ingredient12.IngredientName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ingredient13.IngredientName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ingredient14.IngredientName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ingredient15.IngredientName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ingredient16.IngredientName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ingredient17.IngredientName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ingredient18.IngredientName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ingredient19.IngredientName)
+    </td>*@
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.RecipeId }) |
             @Html.ActionLink("Details", "Details", new { id=item.RecipeId }) |
