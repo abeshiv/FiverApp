@@ -12,10 +12,10 @@
 <table class="table">
     <tr>
         <th>
-            Name
+            @Html.ActionLink("Name", "Index", new { sortOrder = ViewBag.NameSortParm})
         </th>
         <th>
-            Type
+            @Html.ActionLink("Type", "Index", new { sortOrder = ViewBag.TypeSortParm})
         </th>
         <th></th>
     </tr>
