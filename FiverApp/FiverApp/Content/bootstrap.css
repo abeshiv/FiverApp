@@ -2065,13 +2065,13 @@ pre code {
   }
 }
 table {
-  background-color: skyblue;
+  /*background-color: skyblue;*/
 }
 th {
   text-align: left;
 }
 .table {
-  width: 100%;
+  width: 50%;
   max-width: 100%;
   margin-bottom: 20px;
 }
