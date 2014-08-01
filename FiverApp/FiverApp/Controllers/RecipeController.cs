@@ -15,12 +15,18 @@ namespace FiverApp.Controllers
         private FiverDBEntities db = new FiverDBEntities();
 
         // GET: /Recipe/
-        public ActionResult Index(string sortOrder)
+        public ActionResult Index(string sortOrder, string searchString)
         {
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ?"name_desc" :"";
             ViewBag.TypeSortParm = String.IsNullOrEmpty(sortOrder) ?"type_desc" :"";
             var recipes = from s in db.Recipes
                           select s;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                recipes = recipes.Where(s => s.Name.ToUpper().Contains(searchString.ToUpper()));
+            }
+
             switch(sortOrder)
             {
                 case "name_desc":
